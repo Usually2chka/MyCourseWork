@@ -12,7 +12,13 @@ body {
     padding: 0;
     background-color: #1f1f1f;
 }
+.active {
+    border-color: #787ADE;
+    color: #787ADE;
+}
 header {
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -21,25 +27,46 @@ header {
     background-color: #1f1f1f;
     padding-top: 15px;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    position: fixed;
     
 }
+
 .contanier {
     font-family: "Unbounded", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     color: #cbcbcb;
-    margin: 40px;
     margin-right: 20%;
     margin-left: 20%;
     margin-top: 5%;
 }
+.infobox__header{
+    font-size: 32px;
+    font-weight: 600;
+}
+.infobox__description {
+    font-size: 20px;
+}
+.infobox__text_right {
+    text-align: right;
+}
 .contanier h1 {
     font-size: 64px;
+}
+.infobox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 164px;
+}
+.infobox__text {
+    max-width: 550px;
 }
 .contanier iframe
 {
     border-radius: 47px;
     margin: 0;
+    box-shadow: 30px 30px 0px 0px #787ADE;
 }
  ul li {
     list-style: none;

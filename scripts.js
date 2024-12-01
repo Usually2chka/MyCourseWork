@@ -27,12 +27,6 @@ async function loadElementData() {
     });
   });
   });
-
-
-
-  document.getElementById("Button").addEventListener("click", function() {
-    window.location.href = "https://bikrammondal5.github.io/Glassmorphism-periodic-table/"; 
-  });
   
   // Function to show the modal with element info
   function showElementInfo(elementSymbol) {
@@ -55,11 +49,6 @@ async function loadElementData() {
   
     // Show the modal
     document.querySelector('.modal').style.display = 'block';
-    
-    // Close the modal when clicking the close button
-    document.getElementById('close-btn').addEventListener('click', () => {
-      document.querySelector('.modal').style.display = 'none';
-    });
   }
   document.onmousemove = showElementInfo;
 
@@ -85,8 +74,4 @@ async function loadElementData() {
     // Show the modal
     document.querySelector('.ThreeD').style.display = 'block';
     
-    // Close the modal when clicking the close button
-    document.getElementById('close-btn').addEventListener('click', () => {
-      document.querySelector('.modal').style.display = 'none';
-    });
   }
