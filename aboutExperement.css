@@ -1,0 +1,48 @@
+a {
+    text-decoration: none;
+    color: white;
+    background-color: #1f1f1f;
+    border: 2px solid #cbcbcb; /* Параметры рамки */
+    padding: 0.5em 5em; /* Поля вокруг текста */
+    border-radius: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f1f;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 15px;
+    box-shadow: 0px 2px 0px 0px #cbcbcb;
+    background-color: #1f1f1f;
+    padding-top: 15px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    
+}
+.contanier {
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #cbcbcb;
+    margin: 40px;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+.contanier h1 {
+    font-size: 64px;
+}
+.contanier iframe
+{
+    border-radius: 47px;
+    margin: 0;
+}
+ ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
