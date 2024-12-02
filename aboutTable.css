@@ -1,10 +1,15 @@
 a {
     text-decoration: none;
-    color: white;;
+    color: white;
     background-color: #1f1f1f;
     border: 2px solid #cbcbcb; /* Параметры рамки */
     padding: 0.5em 5em; /* Поля вокруг текста */
     border-radius: 20px;
+}
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
 }
 
 body {
@@ -22,54 +27,77 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
     box-shadow: 0px 2px 0px 0px #cbcbcb;
     background-color: #1f1f1f;
-    padding-top: 5px;
+    padding-top: 15px;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     position: fixed;
     
 }
 
-.contanier {
+.main_content {
     font-family: "Unbounded", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     color: #cbcbcb;
     margin-right: 20%;
     margin-left: 20%;
-    margin-top: 5%;
+    margin-top: 10%;
+    
 }
-.infobox__header{
-    font-size: 32px;
-    font-weight: 600;
+
+.main_content h1 {
+    text-align: center;
+    font-size: 45px;
 }
-.infobox__description {
-    font-size: 20px;
+
+.main_content h2 {
+    font-size: 26px;
 }
-.infobox__text_right {
-    text-align: right;
+
+.main_content p {
+    font-size: 16px;
 }
-.contanier h1 {
-    font-size: 64px;
+
+.text_one {
+    margin-top: 80px;
+    margin-bottom: 145px;
 }
-.infobox {
-    width: 100%;
+
+.text_two{
+    margin-top: 145px;
+    margin-bottom: 100px;
+}
+.fact_text {
+    padding: 15px 15px 25px 30px;
+    background-color: #787ADE;
+    border-radius: 40px;
+    color:aliceblue;
+    margin: 5px;
+}
+
+.text_three {
+    margin-bottom: 145px;
+}
+
+.container_with_pic {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 164px;
+    padding-right: 35px;
+    align-items: center;
+    margin-bottom: 160px;
+    
 }
-.infobox__text {
-    max-width: 400px;
-}
-.contanier iframe
-{
+
+.container_with_pic img {
     border-radius: 47px;
-    margin: 0;
-    box-shadow: 20px 20px 0px 0px #787ADE;
+    box-shadow: 30px -30px 0px 0px #787ADE;
 }
- ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 20px;
+
+.container_with_pic p {
+    max-width: 600px;
+
 }
+
+

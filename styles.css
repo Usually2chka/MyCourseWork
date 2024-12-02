@@ -23,13 +23,22 @@ a {
     color: white;
     background-color: #1f1f1f;
     border: 2px solid #cbcbcb; /* Параметры рамки */
-    padding: 0.5em 5em; /* Поля вокруг текста */
+    padding: 0.5em 3em; /* Поля вокруг текста */
     border-radius: 20px;
 }
 body {
     margin: 0;
     padding: 0;
     background-color: #1f1f1f;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: consolas;
+    background-color: #1A1A1A;
+    color: #E0E0E0;
 }
 .active {
     border-color: #787ADE;
@@ -48,26 +57,11 @@ body {
     display: none;
 }
     
-    /* Делаем 3D плеер на весь браузер */
-model-viewer {
+    /* Делаем 3D плеер на весь браузер 
+    model-viewer {
     zoom: 1.5;
     width: 100%;
-}
-
-.user {
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    font-family: consolas;
-    background-color: #1A1A1A;
-    color: #E0E0E0;
-
-}
+}*/
 
 .button {
     --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);

@@ -58,7 +58,7 @@ async function loadElementData() {
     
     // Set the content of the modal
     const modalContent =    
-    `<model-viewer class="user" src="${element.bohr_model_3d}" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+    `<model-viewer class=".ThreeD" src="${element.bohr_model_3d}" ar ar-modes="webxr scene-viewer quick-look" field-of-view="60deg" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
     <div class="progress-bar hide" slot="progress-bar">
     <div class="update-bar"></div>
     </div>
@@ -70,7 +70,6 @@ async function loadElementData() {
     </div>
     </model-viewer>`;
     document.querySelector('.ThreeD').innerHTML = modalContent;
-    document.querySelector('.ThreeD').style.position = "absolute";
     // Show the modal
     document.querySelector('.ThreeD').style.display = 'block';
     
