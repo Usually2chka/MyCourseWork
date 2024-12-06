@@ -57,13 +57,14 @@ body {
     display: none;
 }
     
-    /* Делаем 3D плеер на весь браузер */
-model-viewer {
+    /* Делаем 3D плеер на весь браузер model-viewer {
     zoom: 1.5;
     width: 100%;
-}
+}*/
+
 
 .user {
+
 }
 
 main {
@@ -71,7 +72,6 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
     font-family: consolas;
     background-color: #1A1A1A;
     color: #E0E0E0;
