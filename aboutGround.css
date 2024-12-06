@@ -3,8 +3,13 @@ a {
     color: white;
     background-color: #1f1f1f;
     border: 2px solid #cbcbcb; /* Параметры рамки */
-    padding: 0.5em 3em; /* Поля вокруг текста */
+    padding: 0.5em 5em; /* Поля вокруг текста */
     border-radius: 20px;
+}
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
 }
 
 body {
@@ -31,53 +36,26 @@ header {
     
 }
 
-.contanier {
+.mainContent {
     font-family: "Unbounded", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     color: #cbcbcb;
     margin-right: 20%;
     margin-left: 20%;
-    margin-top: 8%;
-   
+    margin-top: 10%;
 }
-.infobox__header{
-    font-size: 32px;
-    font-weight: 600;
+.mainContent h1 {
+    text-align: center;
+    font-size: 45px;
 }
-.infobox__description {
-    font-size: 20px;
+canvas {
+    max-width: 800px; /* Максимальная ширина канваса */
+    width: 100%;      /* Ширина 100% от контейнера */
+    height: 600px;    /* Фиксированная высота канваса */
+    margin: 0 auto;   /* Центрирование */
+    font-size: 40px;
 }
-.infobox__text_right {
-    text-align: right;
-    
-}
-.infobox__description_right {
-    padding-left: 40px;
-}
-.infobox__description_left {
-    padding-right: 35px;
-}
-.contanier h1 {
-    font-size: 64px;
-}
-.infobox {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 164px;
-}
-.infobox__text {
-    max-width: 550px;
-}
-.contanier iframe
-{
-    border-radius: 47px;
-    margin: 0;
-    box-shadow: 30px 30px 0px 0px #787ADE;
-}
- ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 20px;
+.canvas label {
+    font-size: 100px;
 }
