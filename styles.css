@@ -12,12 +12,6 @@ header {
     position: fixed;
     
 }
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    box-sizing: border-box;
-}
 a {
     text-decoration: none;
     color: white;
@@ -55,16 +49,6 @@ body {
 /* Скрываем значок мобильного телефона */
 #ar-prompt {
     display: none;
-}
-    
-    /* Делаем 3D плеер на весь браузер model-viewer {
-    zoom: 1.5;
-    width: 100%;
-}*/
-
-
-.user {
-
 }
 
 main {

@@ -3,7 +3,7 @@ a {
     color: white;
     background-color: #1f1f1f;
     border: 2px solid #cbcbcb; /* Параметры рамки */
-    padding: 0.5em 5em; /* Поля вокруг текста */
+    padding: 0.5em 3em; /* Поля вокруг текста */
     border-radius: 20px;
 }
 ul li {
