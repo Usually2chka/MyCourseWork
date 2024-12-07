@@ -52,16 +52,31 @@ body {
     padding: 0 20px;
 }
 
-    /* Скрываем значок мобильного телефона */
+/* Скрываем значок мобильного телефона */
 #ar-prompt {
     display: none;
 }
     
-    /* Делаем 3D плеер на весь браузер 
-    model-viewer {
+    /* Делаем 3D плеер на весь браузер model-viewer {
     zoom: 1.5;
     width: 100%;
 }*/
+
+
+.user {
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: consolas;
+    background-color: #1A1A1A;
+    color: #E0E0E0;
+
+}
 
 .button {
     --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -131,7 +146,8 @@ body {
 
 h1 {
     text-decoration: none;
-    bottom: 20%;
+    text-align: center;
+    margin-bottom: 150px;
 }
 
 .element {

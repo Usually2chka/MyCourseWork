@@ -25,6 +25,9 @@ async function loadElementData() {
       const elementSymbol = el.textContent.trim();
       showElementInfo(elementSymbol);
     });
+    el.addEventListener('mouseout', () => {
+      document.querySelector('.modal').style.display = 'none';
+    });
   });
   });
   
@@ -54,11 +57,12 @@ async function loadElementData() {
 
   function showElementForPcInfo(elementSymbol) {
     const element = elementData[elementSymbol];
+    console.log(element);
     if (!element) return; // Skip if no data is found
     
     // Set the content of the modal
     const modalContent =    
-    `<model-viewer class=".ThreeD" src="${element.bohr_model_3d}" ar ar-modes="webxr scene-viewer quick-look" field-of-view="60deg" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+    `<model-viewer class="user" src="${element.bohr_model_3d}" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
     <div class="progress-bar hide" slot="progress-bar">
     <div class="update-bar"></div>
     </div>
@@ -68,7 +72,8 @@ async function loadElementData() {
     <div id="ar-prompt">
         <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
     </div>
-    </model-viewer>`;
+    </model-viewer>
+    <p style="text-align: center">${element.name}</p>`;
     document.querySelector('.ThreeD').innerHTML = modalContent;
     // Show the modal
     document.querySelector('.ThreeD').style.display = 'block';
