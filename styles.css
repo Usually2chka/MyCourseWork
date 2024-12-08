@@ -12,12 +12,6 @@ header {
     position: fixed;
     
 }
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    box-sizing: border-box;
-}
 a {
     text-decoration: none;
     color: white;
@@ -55,16 +49,6 @@ body {
 /* Скрываем значок мобильного телефона */
 #ar-prompt {
     display: none;
-}
-    
-    /* Делаем 3D плеер на весь браузер model-viewer {
-    zoom: 1.5;
-    width: 100%;
-}*/
-
-
-.user {
-
 }
 
 main {
@@ -149,7 +133,6 @@ h1 {
     text-align: center;
     margin-bottom: 150px;
 }
-
 .element {
     height: 50px;
     width: 50px;
@@ -302,9 +285,10 @@ div:hover {
 
 .modal {
     position: fixed;
-    top: 35%;
+    top: 29%;
     left: 45%;
     width: 20%;
+    max-height: 250px;
     transform: translate(-50%, -50%);
     background-color: #2A2A2A; /* Charcoal Black */
     border-radius: 10px;
@@ -312,9 +296,6 @@ div:hover {
     z-index: 1000;
     padding: 20px;
     display: none;
-}
-
-.ThreeD {
 }
 
 .modal-content {

@@ -3,7 +3,7 @@ a {
     color: white;
     background-color: #1f1f1f;
     border: 2px solid #cbcbcb; /* Параметры рамки */
-    padding: 0.5em 5em; /* Поля вокруг текста */
+    padding: 0.5em 3em; /* Поля вокруг текста */
     border-radius: 20px;
 }
 ul li {
@@ -34,6 +34,15 @@ header {
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     position: fixed;
     
+}
+
+.section p{
+    min-width: 250px;
+    min-height: 240px;
+}
+.section {
+    min-width: 365px;
+    max-height: 365px;
 }
 
 .main_content {

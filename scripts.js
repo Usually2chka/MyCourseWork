@@ -45,9 +45,10 @@ async function loadElementData() {
       <p><strong>Phase:</strong> ${element.phase}</p>
       <p><strong>Density:</strong> ${element.density} g/cm³</p>
       <p><strong>Melting Point:</strong> ${element.melt} K</p>
-      <p><strong>Boiling Point:</strong> ${element.boil} K</p>
-      <p><strong>Discovered By:</strong> ${element.discovered_by}</p>
     `;
+    //<p><strong>Boiling Point:</strong> ${element.boil} K</p>
+    //<p><strong>Discovered By:</strong> ${element.discovered_by}</p>
+    //
     document.querySelector('.modal .modal-content').innerHTML = modalContent;
   
     // Show the modal
@@ -62,7 +63,7 @@ async function loadElementData() {
     
     // Set the content of the modal
     const modalContent =    
-    `<model-viewer class="user" src="${element.bohr_model_3d}" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+    `<model-viewer class="user" src="${element.bohr_model_3d}" ar ar-modes="webxr scene-viewer quick-look" field-of-view="60deg" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
     <div class="progress-bar hide" slot="progress-bar">
     <div class="update-bar"></div>
     </div>

@@ -24,7 +24,7 @@
         </div>
     </header>
     <div class="mainContent">
-        <h1>Element Abundance in Soil</h1>
+        <h1>Распростроненность в почве химических элементов</h1>
         <canvas id="soilElementsChart"></canvas>
     </div>
 
@@ -33,9 +33,9 @@
     const soilElementsChart = new Chart(ctx, {
         type: 'pie', // Тип диаграммы
         data: {
-            labels: ['Oxygen', 'Silicon', 'Aluminum', 'Iron', 'Calcium', 'Sodium', 'Potassium', 'Magnesium', 'Sulfur', 'Carbon'],
+            labels: ['Кислород', 'Кремний', 'Алюминий', 'Железо', 'Кальций', 'Натрий', 'Калий', 'Магний', 'Сера', 'Углерод'],
             datasets: [{
-                label: 'Element Abundance in Soil (%)',
+                label: 'Содержание в почве (%)',
                 data: [46.6, 27.7, 8.1, 5.0, 3.6, 2.0, 2.5, 2.0, 0.1, 0.03], // Данные распространенности
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.6)',
@@ -77,7 +77,6 @@
                 },
                 title: {
                     display: true,
-                    text: 'Element Abundance in Soil'
                 }
             }
         }
