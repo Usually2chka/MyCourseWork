@@ -46,7 +46,8 @@ header {
     margin-top: 10%;
 }
 .mainContent h1 {
-    text-align: center;
+    text-align: justify;
+    line-height: 2.5;
     font-size: 45px;
 }
 canvas {

@@ -1,11 +1,11 @@
 {
     "elements": [
         {
-            "name": "Hydrogen",
+            "name": "Водород",
             "appearance": "colorless gas",
             "atomic_mass": 1.008,
             "boil": 20.271,
-            "category": "diatomic nonmetal",
+            "category": "двуатомный неметалл",
             "density": 0.08988,
             "discovered_by": "Henry Cavendish",
             "melt": 13.99,
@@ -6170,7 +6170,7 @@
             "block": "p"
         },
         {
-            "name": "Oganesson",
+            "name": "Оганесон",
             "appearance": null,
             "atomic_mass": 294,
             "boil": 350,

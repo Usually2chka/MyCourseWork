@@ -70,7 +70,9 @@ header {
 
 .text_one__infobox p {
     max-width: 700px;
-
+    text-align: justify;
+    line-height: 2.5;
+    padding-right: 100px;
 }
 
 .text_one__infobox img {
@@ -97,6 +99,8 @@ header {
 
 .section p {
     max-width: 250px;
+    text-align: center;
+    line-height: 1.5;
 }
 
 .facts {
@@ -116,7 +120,8 @@ header {
 
 .text_five p {
     max-width: 700px;
-    text-align: right;
+    text-align: justify;
+    line-height: 2.0;
 }
 
 .text_five img {

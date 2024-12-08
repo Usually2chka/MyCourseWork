@@ -30,28 +30,21 @@ async function loadElementData() {
     });
   });
   });
-  
-  // Function to show the modal with element info
   function showElementInfo(elementSymbol) {
     const element = elementData[elementSymbol];
-    if (!element) return; // Skip if no data is found
-    
-    // Set the content of the modal
+    if (!element) return;
+
     const modalContent = `
       <h2>${element.name} (${element.symbol})</h2>
-      <p><strong>Atomic Number:</strong> ${element.number}</p>
-      <p><strong>Atomic Weight:</strong> ${element.atomic_mass}</p>
-      <p><strong>Category:</strong> ${element.category}</p>
-      <p><strong>Phase:</strong> ${element.phase}</p>
-      <p><strong>Density:</strong> ${element.density} g/cm³</p>
-      <p><strong>Melting Point:</strong> ${element.melt} K</p>
+      <p><strong>Атомный номер: </strong> ${element.number}</p>
+      <p><strong>Атомная масса: </strong> ${element.atomic_mass}</p>
+      <p><strong>Категория: </strong> ${element.category}</p>
+      <p><strong>Фаза: </strong> ${element.phase}</p>
+      <p><strong>Плотность: </strong> ${element.density} g/cm³</p>
+      <p><strong>Точка кипения: </strong> ${element.melt} K</p>
     `;
-    //<p><strong>Boiling Point:</strong> ${element.boil} K</p>
-    //<p><strong>Discovered By:</strong> ${element.discovered_by}</p>
-    //
     document.querySelector('.modal .modal-content').innerHTML = modalContent;
   
-    // Show the modal
     document.querySelector('.modal').style.display = 'block';
   }
   document.onmousemove = showElementInfo;
@@ -76,7 +69,6 @@ async function loadElementData() {
     </model-viewer>
     <p style="text-align: center">${element.name}</p>`;
     document.querySelector('.ThreeD').innerHTML = modalContent;
-    // Show the modal
     document.querySelector('.ThreeD').style.display = 'block';
     
   }
