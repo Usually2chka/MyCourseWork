@@ -316,3 +316,34 @@ div:hover {
 #close-btn:hover {
     background-color: #4F4F4F; /* Slightly lighter Gray for hover effect */
 }
+
+@media (max-width: 720px) {
+    a {
+        padding: 0.5em 1em; /* Поля вокруг текста */
+        margin-top: 10%;
+    }
+    body {
+        max-width: 100px;
+        padding-left: 600px;
+    }
+    main {
+        max-width: 20%;
+    }
+    header {
+        width: 130%;
+    }
+    .modal {
+        top: 40%;
+        width: 49%;
+        max-height: 270px;
+    }
+}
+@media (max-height: 720px)
+{
+
+    .modal {
+        top: 40%;
+        width: 49%;
+        max-height: 270px;
+    }
+}

@@ -42,7 +42,7 @@ header {
 }
 .section {
     min-width: 365px;
-    max-height: 365px;
+    max-height: 260px;
 }
 
 .main_content {
@@ -98,11 +98,13 @@ header {
 }
 
 .section p {
-    max-width: 250px;
+    max-width: 360px;
     text-align: center;
     line-height: 1.5;
 }
-
+.section h3 {
+    text-align: center;
+}
 .facts {
     display: flex;
     justify-content: space-around;
