@@ -11,21 +11,35 @@
 </head>
 <body>
   <header>
-    <div id="menu"> 
-      <ul>
-        <li><a class="active" href="index.html">Главная</a></li>
-        <li><a href="aboutExperement.html">Популярные эксперименты</a></li>
-        <li><a href="aboutTable.html">О таблице</a></li>
-        <li><a href="aboutGround.html">Элементы в почве</a></li>
-        <li><a href="aboutMendeleev.html">О Менделееве</a></li>
-      </ul>
-    </div>
-  </header>
+        <nav>
+          <ul>
+            <li><a class="active" href="index.html">Главная</a></li>
+            <li><a href="aboutExperement.html">Популярные эксперименты</a></li>
+            <li><a href="aboutTable.html">О таблице</a></li>
+            <li><a href="aboutGround.html">Элементы в почве</a></li>
+            <li><a href="aboutMendeleev.html">О Менделееве</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a class="active" href="index.html">Главная</a></li>
+            <li><a href="aboutExperement.html">Популярные эксперименты</a></li>
+            <li><a href="aboutTable.html">О таблице</a></li>
+            <li><a href="aboutGround.html">Элементы в почве</a></li>
+            <li><a href="aboutMendeleev.html">О Менделееве</a></li>
+          </ul>
+        </div>
+    </header>
   <main>
     <h1>Интерактивная Таблица Менделеева</h1>
-    <div class="userInput" style="cursor: grab"></div>
 
     <div class="main-container">
+      <div class="modal" style="display:none;">
+        <div class="modal-content"></div>
+      </div>
       <div class="column1">
         <div class="element">H</div>
         <div class="element">Li</div>
@@ -150,24 +164,18 @@
   </main>
   <footer>
     <div class="info">
-    <div id ="circle1" class = "Circle"></div> S-блок химических элементов
-    <div id ="circle2" class = "Circle"></div> D-блок химических элементов
-    <div id ="circle3" class = "Circle"></div> Металлоноиды
-    <div id ="circle4" class = "Circle"></div> P-блок химических элементов
-    <div id ="circle5" class = "Circle"></div> Благородные газы
-    <div id ="circle6" class = "Circle"></div> искусственно созданные элементы
+      <div style="display: flex; flex-direction: row;"><div id ="circle1" class = "Circle"></div><span style="margin-left: 15px;">S-блок химических элементов</span></div>
+      <div style="display: flex; flex-direction: row;"><div id ="circle2" class = "Circle"></div><span style="margin-left: 15px;">D-блок химических элементов</span></div>
+      <div style="display: flex; flex-direction: row;"><div id ="circle3" class = "Circle"></div><span style="margin-left: 15px;">Металлоноиды</span></div>
+      <div style="display: flex; flex-direction: row;"><div id ="circle4" class = "Circle"></div><span style="margin-left: 15px;">S-блок химических элементов</span></div>
+      <div style="display: flex; flex-direction: row;"><div id ="circle5" class = "Circle"></div><span style="margin-left: 15px;">P-блок химических элементов</span></div>
+      <div style="display: flex; flex-direction: row;"><div id ="circle6" class = "Circle"></div><span style="margin-left: 15px;">искусственно созданные элементы</span></div>
     </div>
   </footer>
-    <div class="ThreeD" id="ThreeD">
-
-    </div>
-   <!-- Modal Structure -->
-  <div class="modal" style="display:none;">
-    <div class="modal-content"></div>
-  </div>
+    <div class="ThreeD" id="ThreeD"></div>
   <script src = "scripts.js"></script>
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
-
+  <script src = "OpenMenu.js"></script>
 
 </body>
 </html>

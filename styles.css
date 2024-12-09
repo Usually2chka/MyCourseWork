@@ -1,25 +1,5 @@
-header {
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 15px;
-    box-shadow: 0px 2px 0px 0px #cbcbcb;
-    background-color: #1f1f1f;
-    padding-top: 15px;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    position: fixed;
-    
-}
-a {
-    text-decoration: none;
-    color: white;
-    background-color: #1f1f1f;
-    border: 2px solid #cbcbcb; /* Параметры рамки */
-    padding: 0.5em 3em; /* Поля вокруг текста */
-    border-radius: 20px;
-}
+@import url("HeaderForAll.css");
+
 body {
     margin: 0;
     padding: 0;
@@ -39,11 +19,16 @@ body {
     color: #787ADE;
 }
 
+ul {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
 
  ul li {
     list-style: none;
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 5px;
 }
 
 /* Скрываем значок мобильного телефона */
@@ -242,7 +227,8 @@ h1 {
 }
 
 .Circle {
-    width: 20px;
+    min-width: 20px;
+    max-width: 20px;
     height: 20px;
     border-radius: 50%;
 }
@@ -284,11 +270,12 @@ div:hover {
 }
 
 .modal {
-    position: fixed;
-    top: 29%;
-    left: 45%;
-    width: 20%;
-    max-height: 250px;
+    position: absolute;
+    top: 41%; /**/
+    left: 43.5%; /**/
+    width: 29%; /**/
+    max-height: 240px; /**/
+    z-index: 9;
     transform: translate(-50%, -50%);
     background-color: #2A2A2A; /* Charcoal Black */
     border-radius: 10px;
@@ -317,28 +304,50 @@ div:hover {
     background-color: #4F4F4F; /* Slightly lighter Gray for hover effect */
 }
 
-@media (max-width: 720px) {
+@media (max-width: 905px) and (min-width: 904px) {
     a {
-        padding: 0.5em 1em; /* Поля вокруг текста */
+        padding: 0.5em 2em; /* Поля вокруг текста */
         margin-top: 10%;
-    }
-    body {
-        max-width: 100px;
-        padding-left: 600px;
+        font-size: small;
     }
     main {
         max-width: 20%;
     }
-    header {
-        width: 130%;
+    .main-container {
+        max-width: 848px;
     }
     .modal {
-        top: 12%;
-        width: 40%;
-        max-height: 250px;
+        top: 72%;
+        left: 39%;
+        width: 48%;
+        max-height: 240px;
+        z-index: 9;
+    }
+    .Circle {
+        min-width: 20px;
+    }
+    .info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .element {
+        width: 40px;
+        height: 40px;
+    }
+    .p-blockelements {
+        width: 40px;
+        height: 40px;
+    }
+    .d-block {
+        width: 40px;
+        height: 40px;
+    }
+    main > h1 {
+        padding-top: 100px;
+        width: 600px;
     }
 }
-@media (max-height: 720px)
+@media (max-width: 425px) and (min-width: 424px)
 {
 
     .modal {
@@ -347,3 +356,4 @@ div:hover {
         max-height: 270px;
     }
 }
+

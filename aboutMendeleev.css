@@ -139,3 +139,89 @@ header {
 .text_fout h2 {
     box-shadow: 0px 2px 0px 0px #787ADE;
 }
+
+@media (min-width: 1200px) {      
+    .text_one__infobox {
+        display: flex;          
+        align-items: center;
+        margin-bottom: 70px;
+        padding-right: 50px;       
+    }
+    .text_one__infobox p {
+        max-width: 80%;
+        
+    }
+
+    .facts {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .text_five {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 250px;
+        padding-left: 30px;
+    
+    }
+    
+    .text_five p {
+        max-width: 80%;
+        text-align: right;
+    }
+
+    .text_two {
+        margin-bottom: 60px;
+    }
+}
+
+
+@media (min-width: 1010px) {
+            
+    .text_one__infobox {
+        display: flex;   
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 70px;
+        padding-right: 50px;
+    }
+
+    .text_one__infobox p {
+        max-width: 90%;
+        padding: 10px;
+        padding-bottom: 30px;
+    }
+
+    .facts {
+        display: flex;
+        align-items: center;
+    }
+
+    .text_five {
+        display: flex;
+        align-items: center;
+        margin-bottom: 250px;
+        padding-left: 30px;
+    
+    }
+    .text_five p {
+        max-width: 90%;
+        text-align: right;
+        padding: 10px;
+        margin-bottom: 20px;
+        padding-bottom: 30px;
+    }
+
+    .main_content {
+        margin-top: 10%;
+    }
+
+    .text_two {
+        margin-bottom: 80px;
+    }
+
+}
+
+@import url("HeaderForAll.css");
