@@ -333,17 +333,17 @@ div:hover {
         width: 130%;
     }
     .modal {
-        top: 40%;
-        width: 49%;
-        max-height: 270px;
+        top: 12%;
+        width: 40%;
+        max-height: 250px;
     }
 }
 @media (max-height: 720px)
 {
 
     .modal {
-        top: 40%;
-        width: 49%;
+        top: 20%;
+        width: 40%;
         max-height: 270px;
     }
 }
