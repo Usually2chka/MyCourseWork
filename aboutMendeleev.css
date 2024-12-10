@@ -1,3 +1,5 @@
+@import url("HeaderForAll.css");
+
 a {
     text-decoration: none;
     color: white;
@@ -6,6 +8,22 @@ a {
     padding: 0.5em 3em; /* Поля вокруг текста */
     border-radius: 20px;
 }
+
+header {
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 15px;
+    box-shadow: 0px 2px 0px 0px #cbcbcb;
+    background-color: #1f1f1f;
+    padding-top: 15px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    position: fixed;
+    
+}
+
 ul li {
     list-style: none;
     display: inline-block;
@@ -21,20 +39,7 @@ body {
     border-color: #787ADE;
     color: #787ADE;
 }
-header {
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 15px;
-    box-shadow: 0px 2px 0px 0px #cbcbcb;
-    background-color: #1f1f1f;
-    padding-top: 15px;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    position: fixed;
-    
-}
+
 
 .section p{
     min-width: 250px;
@@ -224,4 +229,3 @@ header {
 
 }
 
-@import url("HeaderForAll.css");

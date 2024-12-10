@@ -13,21 +13,33 @@
 </head>
 <body>
     <header>
-        <div id="menu"> 
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a class="active" href="aboutExperement.html">Популярные эксперименты</a></li>
-                <li><a href="aboutTable.html">О таблице</a></li>
-                <li><a href="aboutGround.html">Элементы в почве</a></li>
-                <li><a href="aboutMendeleev.html">О Менделееве</a></li>
-            </ul>
+        <nav>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a class="active" href="aboutExperement.html">Популярные эксперименты</a></li>
+            <li><a href="aboutTable.html">О таблице</a></li>
+            <li><a href="aboutGround.html">Элементы в почве</a></li>
+            <li><a href="aboutMendeleev.html">О Менделееве</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a class="active" href="aboutExperement.html">Популярные эксперименты</a></li>
+            <li><a href="aboutTable.html">О таблице</a></li>
+            <li><a href="aboutGround.html">Элементы в почве</a></li>
+            <li><a href="aboutMendeleev.html">О Менделееве</a></li>
+          </ul>
         </div>
     </header>
     <div class="contanier">
         <h1>
             Популярные эксперименты
         </h1>
-        <div class="infobox">
+        <div class="infobox infobox_right">
             <iframe
             width="720"
             height="405"
@@ -48,7 +60,7 @@
                 </p>
             </div>
         </div>
-        <div class="infobox">
+        <div class="infobox ">
             <div class="infobox__text">
                 <p class="infobox__header">
                     9 ЛЕГКИХ НАУЧНЫХ ЭКСПЕРИМЕНТОВ, КОТОРЫЕ МОЖНО СДЕЛАТЬ ДОМА 
@@ -69,7 +81,7 @@
             allowFullScreen
             ></iframe>
         </div>
-        <div class="infobox">
+        <div class="infobox infobox_right">
             <iframe
             width="720"
             height="405"
@@ -104,13 +116,13 @@
             height="405"
             src="https://rutube.ru/play/embed/1151007baf0af3232609987d38d4d459"
             frameBorder="0"
-            allow="clipboard-write; autoplay"
+            allow="clipboard-write"
             webkitAllowFullScreen
             mozallowfullscreen
             allowFullScreen
             ></iframe>
         </div>
     </div>
-    
+    <script src="OpenMenu.js"></script>
 </body>
 </html>

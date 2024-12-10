@@ -1,11 +1,7 @@
-a {
-    text-decoration: none;
-    color: white;;
-    background-color: #1f1f1f;
-    border: 2px solid #cbcbcb; /* Параметры рамки */
-    padding: 0.5em 3em; /* Поля вокруг текста */
-    border-radius: 20px;
-}
+@import url("HeaderForAll.css");
+
+
+
 
 body {
     margin: 0;
@@ -16,21 +12,6 @@ body {
     border-color: #787ADE;
     color: #787ADE;
 }
-header {
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 15px;
-    box-shadow: 0px 2px 0px 0px #cbcbcb;
-    background-color: #1f1f1f;
-    padding-top: 15px;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    position: fixed;
-    
-}
-
 .contanier {
     font-family: "Unbounded", sans-serif;
     font-optical-sizing: auto;
@@ -79,9 +60,55 @@ header {
     margin: 0;
     box-shadow: 20px 20px 0px 0px #787ADE;
 }
- ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 20px;
-}
 
+@media (max-width: 425px) and (min-width: 424px)
+{
+    
+    .contanier {
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contanier h1 {
+        width: 424px;
+        font-size: 44px;
+        margin-top: 100px;
+        text-align: center;
+    }
+    header {
+        width: 424px;
+    }
+    a {
+        padding: 0.5em 2em; /* Поля вокруг текста */
+        margin-top: 10%;
+        font-size: small;
+    }
+    main {
+        max-width: 424px;
+    }
+    .infobox {
+        flex-direction: column;
+        width: 424px;
+    }
+    iframe {
+        width: 400px;
+    }
+    .infobox_right {
+        flex-direction: column-reverse;
+    }
+    .infobox__text {
+        max-width: 424px;
+    }
+    .infobox__description {
+        padding-left: 0;
+    }
+    .infobox__description_left {
+        padding-right: 0;
+    }
+    .infobox__header {
+        text-align: center;
+        line-height: 1.5;
+    }
+}

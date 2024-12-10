@@ -4,7 +4,7 @@ async function loadElementData() {
     const data = await response.json();
     return data.elements;
   }
-  
+
   // Create a map to hold the element data for quick access
   let elementData = {};
   
@@ -21,13 +21,21 @@ async function loadElementData() {
       });
     });
       document.querySelectorAll('.element, .d-block, .p-blockelements').forEach(el => {
-    el.addEventListener('mouseover', () => {
+        if (window.innerWidth > 904){
+        el.addEventListener('mouseover', () => {
       const elementSymbol = el.textContent.trim();
       showElementInfo(elementSymbol);
     });
     el.addEventListener('mouseout', () => {
       document.querySelector('.modal').style.display = 'none';
     });
+  }
+  else {
+    el.addEventListener('click', () => {
+      const elementSymbol = el.textContent.trim();
+      showElementInfo(elementSymbol);
+    });
+  }
   });
   });
   function showElementInfo(elementSymbol) {
