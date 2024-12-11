@@ -114,6 +114,7 @@ ul li:hover {
   height: 200px;
   background-color: #1f1f1f;
   margin: 0 auto;
+  padding-left: 0;
 }
 
 .mobile-menu li {
