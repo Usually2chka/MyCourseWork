@@ -1,3 +1,5 @@
+@import url("HeaderForAll.css");
+
 a {
     text-decoration: none;
     color: white;
@@ -12,15 +14,6 @@ ul li {
     padding: 0 20px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #1f1f1f;
-}
-.active {
-    border-color: #787ADE;
-    color: #787ADE;
-}
 header {
     top: 0;
     width: 100%;
@@ -35,7 +28,15 @@ header {
     position: fixed;
     
 }
-
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f1f;
+}
+.active {
+    border-color: #787ADE;
+    color: #787ADE;
+}
 .mainContent {
     font-family: "Unbounded", sans-serif;
     font-optical-sizing: auto;
@@ -59,4 +60,55 @@ canvas {
 }
 .canvas label {
     font-size: 100px;
+}
+@media (max-width: 905px) and (min-width: 904px) {
+    a {
+        padding: 0.5em 2em; /* Поля вокруг текста */
+        margin-top: 10%;
+        font-size: small;
+    }
+    main {
+        max-width: 20%;
+    }
+    .main-container {
+        max-width: 848px;
+    }
+    .modal {
+        top: 72%;
+        left: 39%;
+        width: 48%;
+        max-height: 240px;
+        z-index: 9;
+    }
+}
+@media (max-width: 425px) and (min-width: 424px)
+{
+    h1 {
+        font-size: 25px !important;
+    }
+    header {
+        width: 100%;
+    }
+    a {
+        padding: 0.5em 2em; /* Поля вокруг текста */
+        margin-top: 10%;
+        font-size: small;
+    }
+    main {
+        max-width: 424px;
+    }
+    .mainContent {
+        max-width: 424px;
+        margin: 0;
+        margin-top: 20%;
+    }
+
+    canvas {
+        max-width: 1000px; /* Максимальная ширина канваса */
+        width: 100%;      /* Ширина 100% от контейнера */
+        height: 600px;    /* Фиксированная высота канваса */
+        margin: 0 auto;   /* Центрирование */
+        font-size: 40px;
+
+    }
 }

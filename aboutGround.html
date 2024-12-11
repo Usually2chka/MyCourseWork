@@ -13,14 +13,26 @@
 </head>
 <body>
     <header>
-        <div id="menu"> 
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="aboutExperement.html">Популярные эксперименты</a></li>
-                <li><a href="aboutTable.html">О таблице</a></li>
-                <li><a class="active" href="aboutGround.html">Элементы в почве</a></li>
-                <li><a href="aboutMendeleev.html">О Менделееве</a></li>
-            </ul>
+        <nav>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="aboutExperement.html">Популярные эксперименты</a></li>
+            <li><a href="aboutTable.html">О таблице</a></li>
+            <li><a class="active" href="aboutGround.html">Элементы в почве</a></li>
+            <li><a href="aboutMendeleev.html">О Менделееве</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="aboutExperement.html">Популярные эксперименты</a></li>
+            <li><a href="aboutTable.html">О таблице</a></li>
+            <li><a class="active" href="aboutGround.html">Элементы в почве</a></li>
+            <li><a href="aboutMendeleev.html">О Менделееве</a></li>
+          </ul>
         </div>
     </header>
     <div class="mainContent">
@@ -29,59 +41,116 @@
     </div>
 
 <script>
-    const ctx = document.getElementById('soilElementsChart').getContext('2d');
-    const soilElementsChart = new Chart(ctx, {
-        type: 'pie', // Тип диаграммы
-        data: {
-            labels: ['Кислород', 'Кремний', 'Алюминий', 'Железо', 'Кальций', 'Натрий', 'Калий', 'Магний', 'Сера', 'Углерод'],
-            datasets: [{
-                label: 'Содержание в почве  (%)',
-                data: [46.6, 27.7, 8.1, 5.0, 3.6, 2.0, 2.5, 2.0, 0.1, 0.03], // Данные распространенности
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.6)',
-                    'rgba(54, 162, 235, 0.6)',
-                    'rgba(255, 206, 86, 0.6)',
-                    'rgba(75, 192, 192, 0.6)',
-                    'rgba(153, 102, 255, 0.6)',
-                    'rgba(255, 159, 64, 0.6)',
-                    'rgba(99, 255, 132, 0.6)',
-                    'rgba(132, 99, 255, 0.6)',
-                    'rgba(255, 99, 206, 0.6)',
-                    'rgba(206, 255, 99, 0.6)'
-                ],
-                borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)',
-                    'rgba(99, 255, 132, 1)',
-                    'rgba(132, 99, 255, 1)',
-                    'rgba(255, 99, 206, 1)',
-                    'rgba(206, 255, 99, 1)'
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            responsive: true,
-            plugins: {
-                legend: {
-                    position: 'top',
-                    labels: {
-                        font: {
-                            size: 16
+    if (window.innerWidth > 425)
+    {
+        const ctx = document.getElementById('soilElementsChart').getContext('2d');
+        const soilElementsChart = new Chart(ctx, {
+            type: 'pie', // Тип диаграммы
+            data: {
+                labels: ['Кислород', 'Кремний', 'Алюминий', 'Железо', 'Кальций', 'Натрий', 'Калий', 'Магний', 'Сера', 'Углерод'],
+                datasets: [{
+                    label: 'Содержание в почве  (%)',
+                    data: [46.6, 27.7, 8.1, 5.0, 3.6, 2.0, 2.5, 2.0, 0.1, 0.03], // Данные распространенности
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.6)',
+                        'rgba(54, 162, 235, 0.6)',
+                        'rgba(255, 206, 86, 0.6)',
+                        'rgba(75, 192, 192, 0.6)',
+                        'rgba(153, 102, 255, 0.6)',
+                        'rgba(255, 159, 64, 0.6)',
+                        'rgba(99, 255, 132, 0.6)',
+                        'rgba(132, 99, 255, 0.6)',
+                        'rgba(255, 99, 206, 0.6)',
+                        'rgba(206, 255, 99, 0.6)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(99, 255, 132, 1)',
+                        'rgba(132, 99, 255, 1)',
+                        'rgba(255, 99, 206, 1)',
+                        'rgba(206, 255, 99, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                        labels: {
+                            font: {
+                                size: 23
+                            }
                         }
+                    },
+                    title: {
+                        display: false,
                     }
-                },
-                title: {
-                    display: false,
                 }
             }
-        }
-    });
+        });
+    }
+    else {
+        const ctx = document.getElementById('soilElementsChart').getContext('2d');
+        const soilElementsChart = new Chart(ctx, {
+            type: 'pie', // Тип диаграммы
+            data: {
+                labels: ['Кислород', 'Кремний', 'Алюминий', 'Железо', 'Кальций', 'Натрий', 'Калий', 'Магний', 'Сера', 'Углерод'],
+                datasets: [{
+                    label: 'Содержание в почве  (%)',
+                    data: [46.6, 27.7, 8.1, 5.0, 3.6, 2.0, 2.5, 2.0, 0.1, 0.03], // Данные распространенности
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.6)',
+                        'rgba(54, 162, 235, 0.6)',
+                        'rgba(255, 206, 86, 0.6)',
+                        'rgba(75, 192, 192, 0.6)',
+                        'rgba(153, 102, 255, 0.6)',
+                        'rgba(255, 159, 64, 0.6)',
+                        'rgba(99, 255, 132, 0.6)',
+                        'rgba(132, 99, 255, 0.6)',
+                        'rgba(255, 99, 206, 0.6)',
+                        'rgba(206, 255, 99, 0.6)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(99, 255, 132, 1)',
+                        'rgba(132, 99, 255, 1)',
+                        'rgba(255, 99, 206, 1)',
+                        'rgba(206, 255, 99, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'left',
+                        labels: {
+                            font: {
+                                size: 23
+                            }
+                        }
+                    },
+                    title: {
+                        display: false,
+                    }
+                }
+            }
+        });
+    }
 </script>
-
+<script src="OpenMenu.js"></script>
 </body>
 </html>

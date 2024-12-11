@@ -1,16 +1,6 @@
-a {
-    text-decoration: none;
-    color: white;
-    background-color: #1f1f1f;
-    border: 2px solid #cbcbcb; /* Параметры рамки */
-    padding: 0.5em 3em; /* Поля вокруг текста */
-    border-radius: 20px;
-}
-ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 20px;
-}
+@import url("HeaderForAll.css");
+
+
 
 body {
     margin: 0;
@@ -21,20 +11,7 @@ body {
     border-color: #787ADE;
     color: #787ADE;
 }
-header {
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 15px;
-    box-shadow: 0px 2px 0px 0px #cbcbcb;
-    background-color: #1f1f1f;
-    padding-top: 15px;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    position: fixed;
-    
-}
+
 
 .chem {
     max-height: 500px;
@@ -45,8 +22,8 @@ header {
     font-optical-sizing: auto;
     font-style: normal;
     color: #cbcbcb;
-    margin-right: 20%;
-    margin-left: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 10%;
     
 }
@@ -91,20 +68,71 @@ header {
 .container_with_pic {
     display: flex;
     justify-content: space-between;
-    padding-right: 35px;
     align-items: center;
     margin-bottom: 160px;
     
 }
 
-.container_with_pic img {
+.container_with_pic .chem {
     border-radius: 47px;
     box-shadow: 30px -30px 0px 0px #787ADE;
+    
 }
 
 .container_with_pic p {
-    max-width: 600px;
-
+    max-width: 550px;
+    
 }
 
 
+@media (max-width: 905px) and (min-width: 904px) {
+    a {
+        padding: 0.5em 2em; /* Поля вокруг текста */
+        margin-top: 10%;
+        font-size: small;
+    }
+    main {
+        max-width: 20%;
+    }
+    .main-container {
+        max-width: 848px;
+    }
+    .modal {
+        top: 72%;
+        left: 39%;
+        width: 48%;
+        max-height: 240px;
+        z-index: 9;
+    }
+}
+@media (max-width: 425px) and (min-width: 424px)
+{
+    header {
+        width: 100%;
+    }
+    a {
+        padding: 0.5em 2em; /* Поля вокруг текста */
+        margin-top: 10%;
+        font-size: small;
+    }
+    main {
+        max-width: 424px;
+    }
+    .chem {
+        box-shadow: none !important;
+        align-self: center;
+    }
+    .container_with_pic {
+        flex-direction: column;
+    }
+    h1 {
+        width: 100%;
+        text-align: center !important; 
+        font-size: 38px !important;
+    }
+    .main_content {
+        margin-top: 100px;
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+}
