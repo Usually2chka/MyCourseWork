@@ -165,3 +165,9 @@ ul li:hover {
 .text_fout h2 {
     box-shadow: 0px 2px 0px 0px #787ADE;
 }
+@media (max-width: 905px) and (min-width: 904px) {
+  
+  #hamburger-icon {
+    width: 840px !important;
+  }
+}

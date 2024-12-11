@@ -80,6 +80,7 @@ canvas {
         max-height: 240px;
         z-index: 9;
     }
+    
 }
 @media (max-width: 425px) and (min-width: 424px)
 {
