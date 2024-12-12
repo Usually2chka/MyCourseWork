@@ -319,7 +319,7 @@ div:hover {
     .modal {
         top: 72%;
         left: 39%;
-        width: 48%;
+        width: 42%;
         max-height: 240px;
         z-index: 9;
     }
