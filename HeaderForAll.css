@@ -10,7 +10,7 @@ header {
     padding-top: 15px;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     position: fixed;
-    z-index: 10;
+    z-index: 100;
 }
 header a {
     text-decoration: none;
