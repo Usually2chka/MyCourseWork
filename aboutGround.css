@@ -8,11 +8,6 @@ a {
     padding: 0.5em 3em; /* Поля вокруг текста */
     border-radius: 20px;
 }
-ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 20px;
-}
 
 header {
     top: 0;
