@@ -405,7 +405,7 @@ div:hover {
     }
 }
 
-@media (max-width: 1376px) and (min-width: 1374px) {
+@media (max-width: 1392px) and (min-width: 1391px) {
     header {
         width: 100%;
     }
@@ -427,7 +427,7 @@ div:hover {
         z-index: 10;
     }
     .modal {
-        top: 38%; /**/
+        top: 44%; /**/
         left: 43%; /**/
         width: 30%; /**/
         max-height: 290px; /**/
