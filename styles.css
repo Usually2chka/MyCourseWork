@@ -316,7 +316,7 @@ div:hover {
         max-width: 848px;
     }
     .modal {
-        top: 105%; /*72*/
+        top: 115%; /*72*/
         left: 39%;
         width: 42%;
         max-height: 270px;
