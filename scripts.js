@@ -47,7 +47,7 @@ async function loadElementData() {
       <p><strong>Атомный номер: </strong> ${element.number}</p>
       <p><strong>Атомная масса: </strong> ${element.atomic_mass}</p>
       <p><strong>Категория: </strong> ${element.category}</p>
-      <p><strong>Фаза: </strong> ${element.phase}</p>
+      <p><strong>Состояние: </strong> ${element.phase}</p>
       <p><strong>Плотность: </strong> ${element.density} g/cm³</p>
       <p><strong>Точка кипения: </strong> ${element.melt} K</p>
     `;
