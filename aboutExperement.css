@@ -7,6 +7,8 @@ body {
 .active {
     border-color: #787ADE;
     color: #787ADE;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .contanier {
     font-family: "Unbounded", sans-serif;
